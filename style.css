@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "Gloock";
+  src: url("fonts/GLoock-Regular.ttf");
+}
+
+/* Colors */
+.navbar-nav.nav-list .nav-link {  color: #FFC32B; }
+.navbar { background-color: #641414; }
+
+/* Padding */
+.navbar-brand { padding-top: 0; padding-bottom: 0; margin: 0}
+.nav-link { padding-top: 0; padding-bottom: 0;}
+.nav-list { padding-top: 0; padding-bottom: 0; }
+.navbar .container-fluid { padding-left: 1rem; padding-right: 1rem;}
+
+/* Link text positioning */
 .nav-page-link { 
     position: absolute; 
     top: 0; 
@@ -9,8 +25,71 @@
     justify-content:center; 
 }
 
-.navbar-logo {
-    height:70px;
+/* Font */
+.nav-list {
+    font-family: "Gloock", serif; 
 }
 
-.navbar-nav .nav-link {  color: #FFC32B; }
+.container-fluid {
+    color: #ffffff;
+}
+
+/* Default sizes */
+.navbar-brand { font-size: inherit; }
+.nav-list .nav-link { height: 4em; position: relative; }
+.nav-list img { 
+    height: 4em; 
+    display: block; 
+    margin: 0 auto; 
+    width: 100%; 
+    object-fit: contain;}
+
+
+/* Navbar scaling */
+.navbar {font-size: min(24px, 2.35vw);}
+
+.navbar .container-fluid { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+.nav-list { 
+    display: flex;
+    justify-content: space-between;
+    flex: 0 1 40em;
+}
+
+.navbar-brand img { 
+    height: 3.5em; 
+}
+
+.nav-list .nav-item { 
+    flex: 0 0 8em 
+}
+
+/* Title Styling */
+.h1 {
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+/* Main Content Block Styling */
+.page-content {
+    background-color: #131313;
+    margin-top: 12rem;
+    min-height: 90vh;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+/* Background Wallpaper */
+.bg-layer {
+    position:fixed;
+    inset: 0;
+    z-index: -1;
+    background-image: url("images/background_tile.png");
+    background-size: 100px;
+}
