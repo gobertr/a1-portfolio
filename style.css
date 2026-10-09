@@ -1,11 +1,20 @@
+/* Font */
 @font-face {
   font-family: "Gloock";
   src: url("fonts/GLoock-Regular.ttf");
 }
 
+/* Background Scroll */
+@keyframes scroll {
+    to { background-position: 4em 8em;}
+}
+
+/* To Prevent Bouncy Scroll */
+html { overscroll-behavior: none; }
+
 /* Colors */
 .navbar-nav.nav-list .nav-link {  color: #FFC32B; }
-.navbar { background-color: #641414; }
+.navbar { background-color: #501010; }
 
 /* Padding */
 .navbar-brand { padding-top: 0; padding-bottom: 0; margin: 0}
@@ -23,6 +32,7 @@
     display:flex; 
     align-items:center; 
     justify-content:center; 
+    transform: translateY(-0.1em);
 }
 
 /* Font */
@@ -36,17 +46,29 @@
 
 /* Default sizes */
 .navbar-brand { font-size: inherit; }
-.nav-list .nav-link { height: 4em; position: relative; }
-.nav-list img { 
+
+
+.nav-list .nav-link { 
     height: 4em; 
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list img { 
+    height: 3.5em; 
     display: block; 
     margin: 0 auto; 
     width: 100%; 
-    object-fit: contain;}
-
+    object-fit: contain;
+}
 
 /* Navbar scaling */
-.navbar {font-size: min(24px, 2.35vw);}
+.navbar {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: min(24px, 2.35vw);
+}
 
 .navbar .container-fluid { 
     display: flex;
@@ -59,9 +81,10 @@
     display: flex;
     justify-content: space-between;
     flex: 0 1 40em;
+    min-width: 32em;
 }
 
-.navbar-brand img { 
+.navbar-logo { 
     height: 3.5em; 
 }
 
@@ -69,20 +92,40 @@
     flex: 0 0 8em 
 }
 
-/* Title Styling */
-.h1 {
+/* Page Title Styling */
+.page-title {
     text-align: center;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    color: #FFC32B;
+    font-size: 2.5em;
+    font-family: "Gloock", serif;
+    inset: 0;
+    margin: 0;
+    transform: translateY(-0.15em);
+}
+
+.title-gif {
+    height: 9em;
+    display: block; 
+}
+
+.title-wrapper {
+    position: relative;
+    width: fit-content;
+    margin: 3em auto;
+    font-size: min(24px, 2vw);
 }
 
 /* Main Content Block Styling */
 .page-content {
-    background-color: #131313;
-    margin-top: 12rem;
+    background-color: #0c0c0c;
     min-height: 90vh;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
+    padding-bottom: 4em;
+    padding-top: 4em;
 }
 
 /* Background Wallpaper */
@@ -91,5 +134,20 @@
     inset: 0;
     z-index: -1;
     background-image: url("images/background_tile.png");
-    background-size: 100px;
+
+    background-size: 4em;
+    animation: scroll 10s linear infinite;
+    font-size: min(24px, 2.35vw)
+}
+
+/* Gradient */
+.bg-layer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 14em;
+    background: url("images/blackg.png") center / 100% 100%;
+    transform: translateY(1.4em);
 }
