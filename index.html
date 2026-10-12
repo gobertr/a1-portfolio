@@ -8,8 +8,8 @@ EMAIL: rgellner@uci.edu
  
 <head>
   <meta charset="utf-8">
-  <meta name="Robert Gellner" content="Robert Gellner's Portfolio">
-  <meta name="description" content="description of your page">
+  <meta name="author" content="Robert Gellner">
+  <meta name="description" content="Robert Gellner's Portfolio">
 
   <link href="bootstrap.min.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
@@ -23,6 +23,8 @@ EMAIL: rgellner@uci.edu
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
+
+
    
 <body>        
   
@@ -30,37 +32,37 @@ EMAIL: rgellner@uci.edu
      
   <nav class="navbar navbar-expand sticky-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
         <img src = "images/new_r.png" alt="Website Logo" class="navbar-logo">
       </a>
   
       <ul class="navbar-nav nav-list">
  
-        <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/watch?v=-qfEOE4vtxE">
+        <li class="nav-item"><a class="nav-link" href="index.html">
           <img src="images/anim_unloop.gif" alt = "" >
           <span class="nav-page-link">Home</span>
         </a></li> 
  
-        <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/watch?v=-qfEOE4vtxE">
+        <li class="nav-item"><a class="nav-link" href="about.html">
           <img src="images/anim_unloop.gif" alt = "">
-          <span class="nav-page-link">Projects</span>
+          <span class="nav-page-link">About</span>
         </a></li> 
 
-        <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/watch?v=-qfEOE4vtxE">
+        <li class="nav-item"><a class="nav-link" href="art.html">
           <img src="images/anim_unloop.gif" alt = "">
           <span class="nav-page-link">Artwork</span>
         </a></li> 
 
-        <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/watch?v=-qfEOE4vtxE">
+        <li class="nav-item"><a class="nav-link" href="contact.html">
           <img src="images/anim_unloop.gif" alt = "">
           <span class="nav-page-link">Contact</span>
         </a></li> 
  
       </ul>
  
-      <a class="navbar-brand gear-link" href="#">
+      <a class="navbar-brand gear-link" href="#" id="background-toggle">
         <img src="images/gear_icon.gif" alt="Settings Menu" class="gear-moving navbar-logo"> 
-        <img src="images/goldgear.png" alt="Settings Menu" class="gear-still navbar-logo">
+        <img src="images/goldgear.png" alt="" class="gear-still navbar-logo">
       </a>
     </div>
 
@@ -109,6 +111,14 @@ EMAIL: rgellner@uci.edu
 
   </div>
 
+  <!-- Background Pauser -->
+  <script>
+  document.getElementById("background-toggle").addEventListener("click", function(event) {
+    event.preventDefault();
+    document.querySelector(".bg-layer").classList.toggle("paused");
+  });
+
+</script>
 
   <script src="bootstrap.bundle.min.js"></script>
 </body>

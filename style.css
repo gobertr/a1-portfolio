@@ -1,7 +1,7 @@
 /* Font */
 @font-face {
   font-family: "Gloock";
-  src: url("fonts/GLoock-Regular.ttf");
+  src: url("fonts/Gloock-Regular.ttf");
 }
 
 /* Background Scroll */
@@ -129,21 +129,22 @@ html { overscroll-behavior: none; }
 .page-content {
     background-color: #0c0c0c;
     min-height: 90vh;
-    padding-bottom: 4em;
-    padding-top: 4em;
+    padding-bottom: 2em;
+    padding-top: 2em;
 }
 
 /* Main Text Content */
 .page-text {
-    max-width: 70em;
+    max-width: 60em;
     margin: 0 auto;
     padding: 0 1em;
+    font-size: 20px;
 }
 
 .page-text .wrap-img {
     float: left;
     max-width: 50%;
-    width: 15em; 
+    width: 12em; 
     margin: 0 1em 0.5em 0; 
 }
 
@@ -170,3 +171,9 @@ html { overscroll-behavior: none; }
     background: url("images/blackg.png") center / 100% 100%;
     transform: translateY(1.4em);
 }
+
+/* Background Pause */
+.bg-layer.paused {
+    animation-play-state: paused;
+}
+

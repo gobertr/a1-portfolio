@@ -11,28 +11,29 @@ Talking to classmates about class material, assignment requirements, etc. is a g
 1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
 
 */10
-- */1 Readme
-- */2 Basic HTML content
-- */1 Basic CSS styling
-- */1 Advanced feature
-- */2 Responsive layout
-- */1 Passes validation checks
-- */2 Embraces spirit of the assignment
+- 1/1 Readme
+- 2/2 Basic HTML content
+- 1/1 Basic CSS styling
+- 1/1 Advanced feature
+- 2/2 Responsive layout
+- 1/1 Passes validation checks
+- 2/2 Embraces spirit of the assignment
 
 2. What (a) basic features, (b) CSS features, and (c) advanced features did you include in your portfolio?
 
 (a) Basic features
-
+1. Several images
+2. Several links
 
 
 (b) CSS features
-
-
-
+1. Modified padding/margins
+2. Modified text colors
+3. Custom font
+4. Use of Bootstrap
 (c) Advanced features
 
-
-
+Navigation bar
 
 3. Did you ignore any of the warnings or errors presented by the accessibility checker? If so, why does this not seem like an accessibility concern? If it's useful, you can consolidate your thoughts on multiple warnings/errors if the rationale is similar.
 
@@ -40,15 +41,20 @@ Talking to classmates about class material, assignment requirements, etc. is a g
 
 4. How long, in hours, did it take you to complete this assignment?
 
-
+I haven't been keeping track but at least 20 hours if I had to guess. 
 
 5. What online resources did you consult when completing this assignment? (list specific URLs, describe queries to Generative AI, or use of AI-based code completion)
 
-
+I watching the following YouTube tutorial on Bootstrap before starting the assignment: https://www.youtube.com/watch?v=-qfEOE4vtxE
+Throughout the assignment, I also Claude to explain generally how to implement some more complicated parts of the website, such as the adaptive navbar. 
+However, I implemented features one step at a time, and fullly read through the complete explanation of how each feature was structured. 
+I also made sure to type every single line of code myself
+I feel that this was a reasonable tool to use since I wanted to go above and beyond the basic requirements for the assignment when creating my website. 
 
 6. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
 
-
+None
 
 7. Is there anything special we need to know in order to run your code?
 
+No
