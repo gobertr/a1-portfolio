@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+WRITTEN BY: Robert Gellner 
+EMAIL: rgellner@uci.edu
+-->
+ 
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Robert Gellner">
+  <meta name="description" content="Robert Gellner's Portfolio">
+
+  <link href="libraries/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+
+  <!-- Site Logo -->
+  <link rel="icon" href="images/favicon.png">
+
+  <title>Robert Gellner – Contact</title>
+    
+  <!-- Viewport Meta Thing -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+
+   
+<body>        
+  
+  <div class="bg-layer"></div>
+     
+  <nav class="navbar navbar-expand sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src = "images/new_r.png" alt="Website Logo" class="navbar-logo">
+      </a>
+  
+      <ul class="navbar-nav nav-list">
+ 
+        <li class="nav-item"><a class="nav-link" href="index.html">
+          <span class="nav-page-link">Home</span>
+        </a></li> 
+ 
+        <li class="nav-item"><a class="nav-link" href="about.html">
+          <span class="nav-page-link">About</span>
+        </a></li> 
+
+        <li class="nav-item"><a class="nav-link" href="art.html">
+          <span class="nav-page-link">Artwork</span>
+        </a></li> 
+
+        <li class="nav-item"><a class="nav-link" href="contact.html">
+          <img src="images/anim_unloop.gif" alt = "" class="replaying">
+          <span class="nav-page-link">Contact</span>
+        </a></li> 
+ 
+      </ul>
+ 
+      <a class="navbar-brand gear-link" href="#" id="background-toggle">
+        <img src="images/gear_icon.gif" alt="Settings Menu" class="gear-moving navbar-logo"> 
+        <img src="images/goldgear.png" alt="" class="gear-still navbar-logo">
+      </a>
+    </div>
+
+  </nav>
+
+  <!-- Title -->
+    <div class="title-wrapper">
+      <img src="images/anim_unloop.gif" alt = "" class="title-gif replaying">
+      <h1 class="page-title">
+        Home
+      </h1>
+    </div>
+
+
+  <div class = "container-fluid page-content">
+
+    <div class = "page-text">
+      
+      <img src="images/rgellner.jpg" alt="Robert Gellner" class="wrap-img">
+      Hello!
+
+
+      <p>
+        <a href="http://validator.w3.org/check?uri=referer">
+          W3C validator
+        </a>
+      </p>
+      <b>Basic HTML stuff:</b><br>
+      1 img<br>
+      link<br>
+      multiple pages<br>
+      aside and footer (?)<br>
+      custom icons (?)<br><br>
+      <b>CSS stuff:</b><br>
+      Modify padding/margins<br> !
+      Modifying text color (palette creator?)<br> !
+      Use Boostrap<br> !
+      Custom font<br><br> !
+      <b>Advanced Features:</b>
+      Table (why would i need a table son)<br>
+      Navigation bar/sidbar<br> !
+      embedded video? (naw)<br>
+      nested selectors (?)<br>
+      Contact form... (?)<br>
+    </div>
+
+  </div>
+
+  <!-- Background Pauser -->
+  <script>
+    document.getElementById("background-toggle").addEventListener("click", function(event) {
+      event.preventDefault();
+      document.querySelector(".bg-layer").classList.toggle("paused");
+    });
+
+  </script>
+
+  <!-- Gif Refresher -->
+  <script>
+  function replayGifs() {
+    document.querySelectorAll(".replaying").forEach(function (img) {
+      const base = img.getAttribute("src").split("?")[0];
+      img.src = base + "?t=" + Date.now();
+    });
+  }
+
+  window.addEventListener("pageshow", replayGifs);
+  </script>
+
+  <script src="libraries/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
