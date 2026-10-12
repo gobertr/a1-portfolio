@@ -9,6 +9,11 @@
     to { background-position: 4em 8em;}
 }
 
+/* Gear Animation */
+.gear-moving { display: none; }
+.gear-link:hover .gear-still { display: none; }
+.gear-link:hover .gear-moving { display: block; }
+
 /* To Prevent Bouncy Scroll */
 html { overscroll-behavior: none; }
 
@@ -126,6 +131,20 @@ html { overscroll-behavior: none; }
     min-height: 90vh;
     padding-bottom: 4em;
     padding-top: 4em;
+}
+
+/* Main Text Content */
+.page-text {
+    max-width: 70em;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.page-text .wrap-img {
+    float: left;
+    max-width: 50%;
+    width: 15em; 
+    margin: 0 1em 0.5em 0; 
 }
 
 /* Background Wallpaper */
