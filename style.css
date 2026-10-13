@@ -211,3 +211,15 @@ html { overscroll-behavior: none; }
 }
 
 /* Art Gallery */
+.gallery {
+    column-width: 20em;
+    column-gap: 1em;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1em;
+    break-inside: avoid;
+}
