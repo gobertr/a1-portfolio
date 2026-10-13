@@ -135,7 +135,7 @@ html { overscroll-behavior: none; }
 
 /* Main Text Content */
 .page-text {
-    max-width: 60em;
+    max-width: 55em;
     margin: 0 auto;
     padding: 0 1em;
     font-size: 20px;
@@ -177,3 +177,37 @@ html { overscroll-behavior: none; }
     animation-play-state: paused;
 }
 
+/* Project Blocks */
+.project-block {
+    display: flex;
+    gap: 1.5em;
+    align-items: flex-start;
+
+    flex-wrap: wrap;
+    border: 1px solid #ffffff;
+    border-radius: 1.5em;
+    padding: 1em;
+
+    justify-content: center;
+    font-size: min(24px, 4vw);
+}
+
+.project-text {
+    flex: 1 1 15em;
+}
+
+.project-header {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0 0 0.2em 0;
+}
+
+.project-img {
+    width: 18em;
+    height: 18em;
+    object-fit: cover;
+    flex-shrink: 0;
+    max-width: 100%;
+}
+
+/* Art Gallery */
