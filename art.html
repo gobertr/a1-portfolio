@@ -58,58 +58,36 @@ EMAIL: rgellner@uci.edu
       </ul>
  
       <a class="navbar-brand gear-link" href="#" id="background-toggle">
-        <img src="images/gear_icon.gif" alt="Settings Menu" class="gear-moving navbar-logo"> 
+        <img src="images/gear_icon.gif" alt="Toggle Background Scroll" class="gear-moving navbar-logo"> 
         <img src="images/goldgear.png" alt="" class="gear-still navbar-logo">
       </a>
     </div>
-
   </nav>
 
   <!-- Title -->
     <div class="title-wrapper">
       <img src="images/anim_unloop.gif" alt = "" class="title-gif replaying">
       <h1 class="page-title">
-        Home
+        Artwork
       </h1>
     </div>
 
   <div class = "container-fluid page-content">
     <div class="gallery">
-      <img src="portfolio/Big Arnie.gif" alt="tba">
-      <img src="portfolio/Big Bjorn.gif" alt="tba">
-      <img src="portfolio/Big Bongo.gif" alt="tba">
-      <img src="portfolio/Big Kanban.gif" alt="tba">
-      <img src="portfolio/Big Plop.gif" alt="tba">
-      <img src="portfolio/Big Shelley.gif" alt="tba">
-      <img src="portfolio/Big Stylus.gif" alt="tba">
-      <img src="portfolio/Big Syntax.gif" alt="tba">
-      <img src="portfolio/Big Uli.gif" alt="tba">
+      <img src="portfolio/Big_Arnie.gif" alt="tba">
+      <img src="portfolio/Big_Bjorn.gif" alt="tba">
+      <img src="portfolio/Big_Bongo.gif" alt="tba">
+      <img src="portfolio/Big_Kanban.gif" alt="tba">
+      <img src="portfolio/Big_Plop.gif" alt="tba">
+      <img src="portfolio/Big_Shelley.gif" alt="tba">
+      <img src="portfolio/Big_Stylus.gif" alt="tba">
+      <img src="portfolio/Big_Syntax.gif" alt="tba">
+      <img src="portfolio/Big_Uli.gif" alt="tba">
     </div>
 
 
     <div class = "page-text">
-      <p>
-        <a href="http://validator.w3.org/check?uri=referer">
-          W3C validator
-        </a>
-      </p>
-      <b>Basic HTML stuff:</b><br>
-      1 img<br>
-      link<br>
-      multiple pages<br>
-      aside and footer (?)<br>
-      custom icons (?)<br><br>
-      <b>CSS stuff:</b><br>
-      Modify padding/margins<br> !
-      Modifying text color (palette creator?)<br> !
-      Use Boostrap<br> !
-      Custom font<br><br> !
-      <b>Advanced Features:</b>
-      Table (why would i need a table son)<br>
-      Navigation bar/sidbar<br> !
-      embedded video? (naw)<br>
-      nested selectors (?)<br>
-      Contact form... (?)<br>
+      
       
     </div>
 
@@ -136,6 +114,17 @@ EMAIL: rgellner@uci.edu
   window.addEventListener("pageshow", replayGifs);
   </script>
 
+  <!-- Arrow Key Navigation -->
+  <script>
+    const pages = ["index.html", "about.html", "art.html", "contact.html"];
+
+    document.addEventListener("keydown", function(event) {
+
+    if (event.key == "ArrowRight") location.href = pages[3]
+    if (event.key == "ArrowLeft") location.href = pages[1] 
+      
+    });
+  </script>
 
   <script src="libraries/bootstrap.bundle.min.js"></script>
 </body>

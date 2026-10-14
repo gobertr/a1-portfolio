@@ -58,7 +58,7 @@ EMAIL: rgellner@uci.edu
       </ul>
  
       <a class="navbar-brand gear-link" href="#" id="background-toggle">
-        <img src="images/gear_icon.gif" alt="Settings Menu" class="gear-moving navbar-logo"> 
+        <img src="images/gear_icon.gif" alt="Toggle Background Scroll" class="gear-moving navbar-logo"> 
         <img src="images/goldgear.png" alt="" class="gear-still navbar-logo">
       </a>
     </div>
@@ -69,7 +69,7 @@ EMAIL: rgellner@uci.edu
     <div class="title-wrapper">
       <img src="images/anim_unloop.gif" alt = "" class="title-gif replaying">
       <h1 class="page-title">
-        Home
+        Contact
       </h1>
     </div>
 
@@ -78,8 +78,8 @@ EMAIL: rgellner@uci.edu
 
     <div class = "page-text">
       
-      You can reach me at <b>robertmgellner@gmail.com</b>
-      or <b> (510) 631-6754</b>
+      You can reach me at <a href="mailto:robertmgellner@gmail.com"><em>robertmgellner@gmail.com</em></a>
+      <br> or <a href="tel:+15106316754"><em> (510) 631-6754</em></a>
     </div>
 
   </div>
@@ -103,6 +103,18 @@ EMAIL: rgellner@uci.edu
   }
 
   window.addEventListener("pageshow", replayGifs);
+  </script>
+
+  <!-- Arrow Key Navigation -->
+  <script>
+    const pages = ["index.html", "about.html", "art.html", "contact.html"];
+
+    document.addEventListener("keydown", function(event) {
+
+    if (event.key == "ArrowRight") location.href = pages[0]
+    if (event.key == "ArrowLeft") location.href = pages[2] 
+      
+    });
   </script>
 
   <script src="libraries/bootstrap.bundle.min.js"></script>

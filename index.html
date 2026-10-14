@@ -58,7 +58,7 @@ EMAIL: rgellner@uci.edu
       </ul>
  
       <a class="navbar-brand gear-link" href="#" id="background-toggle">
-        <img src="images/gear_icon.gif" alt="Settings Menu" class="gear-moving navbar-logo"> 
+        <img src="images/gear_icon.gif" alt="Toggle Background Scroll" class="gear-moving navbar-logo"> 
         <img src="images/goldgear.png" alt="" class="gear-still navbar-logo">
       </a>
     </div>
@@ -85,11 +85,26 @@ EMAIL: rgellner@uci.edu
             Decker Defense
           </h2>
           <p>
-            Decker defense is a Roguelike Deckbuilder Tower Defense game. 
+            Decker Defense is a Roguelike Deckbuilder Tower Defense game. 
             It is primarily inspired by Balatro, with other inspiration derived from tower defense games such as Bloons TD 6.
             <br><br>
             I started designing the game on my own around April 2026, and later recruited a small team of programmers and artists to join the development team. 
             
+          </p>
+        </div>
+      </div>
+
+      <div class="project-block">
+        <img src="images/omega-animation.gif" alt="" class="project-img">
+        <div class="project-text">
+          <h2 class="project-header">
+            Omega
+          </h2>
+          <p>
+            Omega is an Action Platformer inspired by several games,
+            including Hollow Knight, Kirby, and Bopl Battle.
+            <br><br>
+            I developed the game with a team of about 10 people between January and June 2027. 
           </p>
         </div>
       </div>
@@ -114,6 +129,18 @@ EMAIL: rgellner@uci.edu
   }
 
   window.addEventListener("pageshow", replayGifs);
+  </script>
+
+  <!-- Arrow Key Navigation -->
+  <script>
+    const pages = ["index.html", "about.html", "art.html", "contact.html"];
+
+    document.addEventListener("keydown", function(event) {
+
+    if (event.key == "ArrowRight") location.href = pages[1]
+    if (event.key == "ArrowLeft") location.href = pages[3] 
+      
+    });
   </script>
 
   <script src="libraries/bootstrap.bundle.min.js"></script>

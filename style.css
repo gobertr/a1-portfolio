@@ -52,12 +52,15 @@ html { overscroll-behavior: none; }
 /* Default sizes */
 .navbar-brand { font-size: inherit; }
 
-
-.nav-list .nav-link { 
+.nav-link { 
     height: 4em; 
     position: relative;
     display: flex;
     align-items: center;
+}
+
+.nav-link .a:hover {
+    text-decoration: underline;
 }
 
 .nav-list img { 
@@ -146,6 +149,10 @@ html { overscroll-behavior: none; }
     max-width: 50%;
     width: 12em; 
     margin: 0 1em 0.5em 0; 
+}
+
+.page-text a {
+    color: #FFC32B;
 }
 
 /* Background Wallpaper */

@@ -58,7 +58,7 @@ EMAIL: rgellner@uci.edu
       </ul>
  
       <a class="navbar-brand gear-link" href="#" id="background-toggle">
-        <img src="images/gear_icon.gif" alt="Settings Menu" class="gear-moving navbar-logo"> 
+        <img src="images/gear_icon.gif" alt="Toggle Background Scroll" class="gear-moving navbar-logo"> 
         <img src="images/goldgear.png" alt="" class="gear-still navbar-logo">
       </a>
     </div>
@@ -69,7 +69,7 @@ EMAIL: rgellner@uci.edu
     <div class="title-wrapper">
       <img src="images/anim_unloop.gif" alt = "" class="title-gif replaying">
       <h1 class="page-title">
-        Home
+        About
       </h1>
     </div>
 
@@ -79,15 +79,16 @@ EMAIL: rgellner@uci.edu
     <div class = "page-text">
       
       <img src="images/rgellner.jpg" alt="Robert Gellner" class="wrap-img">
-      <h1><b>Hello!</b></h1>
+      <h1><em>Hello!</em></h1>
 
       My name is Robert Gellner. 
       I'm currently pursuing a B.S. in Informatics at the University of California, Irvine.
-      I have had a lifelong interest in game development, and have worked on several projects during my time at UCI.
+      I have had a lifelong interest in game development, and have worked on 
+      <a href="index.html" style="text-decoration: none;">several projects</a> during my time at UCI.
       I am primarily focused on systems design and content design, 
-      but I am also a 2D artist and animator,  as well as a music composer and producer.
+      but I am also a <a href="art.html" style="text-decoration: none;">2D artist and animator</a>, as well as a music composer and producer.
       <br><br>
-      I am currently leading an indie game project called <b>Decker Defense</b>, with plans to release a free demo sometime during 
+      I am currently leading an indie game project called <em>Decker Defense</em>, with plans to release a free demo sometime during 
       summer of 2027. 
       
     </div>
@@ -116,6 +117,17 @@ EMAIL: rgellner@uci.edu
   window.addEventListener("pageshow", replayGifs);
   </script>
 
+  <!-- Arrow Key Navigation -->
+  <script>
+    const pages = ["index.html", "about.html", "art.html", "contact.html"];
+
+    document.addEventListener("keydown", function(event) {
+
+    if (event.key == "ArrowRight") location.href = pages[2]
+    if (event.key == "ArrowLeft") location.href = pages[0] 
+      
+    });
+  </script>
 
   <script src="libraries/bootstrap.bundle.min.js"></script>
 </body>
