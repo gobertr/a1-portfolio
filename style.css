@@ -155,7 +155,7 @@ html { overscroll-behavior: none; }
     color: #FFC32B;
 }
 
-Background Wallpaper
+/* Background Wallpaper */
 .bg-layer {
     position:fixed;
     inset: 0;
