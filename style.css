@@ -161,6 +161,7 @@ html { overscroll-behavior: none; }
     inset: 0;
     z-index: -1;
     background-image: url("images/background_tile.png");
+    background-color: #501010;
 
     background-size: 4em;
     animation: scroll 10s linear infinite;
