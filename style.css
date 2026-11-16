@@ -155,7 +155,7 @@ html { overscroll-behavior: none; }
     color: #FFC32B;
 }
 
-/* Background Wallpaper
+Background Wallpaper
 .bg-layer {
     position:fixed;
     inset: 0;
@@ -165,17 +165,6 @@ html { overscroll-behavior: none; }
     background-size: 4em;
     animation: scroll 10s linear infinite;
     font-size: min(24px, 2.35vw)
-} */
-
-.bg-layer {
-    position: fixed;
-    inset: 0;
-    z-index: -1;
-    background-color: red;
-    background-image: url("images/background_tile.png");
-
-    background-size: 4em;
-    animation: scroll 10s linear infinite;
 }
 
 /* Gradient */
