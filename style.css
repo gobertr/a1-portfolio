@@ -19,7 +19,7 @@ html { overscroll-behavior: none; }
 
 /* Colors */
 .navbar-nav.nav-list .nav-link {  color: #FFC32B; }
-.navbar { background-color: #461a1a; }
+.navbar { background-color: #501010; }
 
 /* Padding */
 .navbar-brand { padding-top: 0; padding-bottom: 0; margin: 0}
@@ -161,7 +161,7 @@ html { overscroll-behavior: none; }
     inset: 0;
     z-index: -1;
     background-image: url("images/background_tile.png");
-    background-color: #501010;
+    background-color: #461a1a;
 
     background-size: 4em;
     animation: scroll 10s linear infinite;
