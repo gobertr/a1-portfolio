@@ -7,6 +7,11 @@ EMAIL: rgellner@uci.edu
 -->
  
 <head>
+
+  <meta name="darkreader-lock">
+  <link rel="preload" href="fonts/Gloock-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="images/anim_unloop.gif" as="image">
+
   <meta charset="utf-8">
   <meta name="author" content="Robert Gellner">
   <meta name="description" content="Robert Gellner's Portfolio">
@@ -114,7 +119,9 @@ EMAIL: rgellner@uci.edu
     });
   }
 
-  window.addEventListener("pageshow", replayGifs);
+  window.addEventListener("pageshow", function (e) {
+  if (e.persisted) replayGifs();
+});
   </script>
 
   <!-- Arrow Key Navigation -->
