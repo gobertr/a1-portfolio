@@ -19,7 +19,7 @@ html { overscroll-behavior: none; }
 
 /* Colors */
 .navbar-nav.nav-list .nav-link {  color: #FFC32B; }
-.navbar { background-color: #501010; }
+.navbar { background-color: #461a1a; }
 
 /* Padding */
 .navbar-brand { padding-top: 0; padding-bottom: 0; margin: 0}
