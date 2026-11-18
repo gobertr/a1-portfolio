@@ -198,6 +198,9 @@ html { overscroll-behavior: none; }
 
     justify-content: center;
     font-size: min(24px, 4vw);
+
+    margin-bottom: 1.5em;
+
 }
 
 .project-text {
